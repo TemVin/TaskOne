@@ -1,0 +1,48 @@
+/*Позволяет загрузить шрифты на комп юзера*/
+@font-face {
+font-family: 'Gotham';
+src: url('../fonts/GothamPro.eot');
+src: url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+url('../fonts/GothamPro.woff') format('woff'),
+url('../fonts/GothamPro.ttf') format('truetype'),
+url('../fonts/GothamPro.svg') format('svg');
+}
+
+@font-face {
+font-family: 'Gotham';
+src: url('../fonts/GothamPro-Medium.eot');
+src: url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+url('../fonts/GothamPro-Medium.woff') format('woff'),
+url('../fonts/GothamPro-Medium.ttf') format('truetype'),
+url('../fonts/GothamPro-Medium.svg') format('svg');
+}
+
+@font-face {
+font-family: 'Gotham';
+src: url('../fonts/GothamPro-Bold.eot');
+src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/GothamPro-Bold.woff') format('woff'),
+url('../fonts/GothamPro-Bold.ttf') format('truetype'),
+url('../fonts/GothamPro-Bold.svg') format('svg');
+}
+
+@font-face {
+font-family: 'Gotham';
+src: url('../fonts/GothamPro-Black.eot');
+src: url('../fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+url('../fonts/GothamPro-Black.woff') format('woff'),
+url('../fonts/GothamPro-Black.ttf') format('truetype'),
+url('../fonts/GothamPro-Black.svg') format('svg');
+}
+
+/*Общие*/
+
+
+/* Cайдбар */
+.main-logo {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
