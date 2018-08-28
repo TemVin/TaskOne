@@ -178,3 +178,73 @@ ul {
 	letter-spacing:0.4rem;
 }
 
+/*раздел с фото-профилем*/
+.second-section {
+	display: flex;
+}
+
+.action-description{
+	width: 50%;
+	flex-shrink: 0;
+	background-image: url(../img/girl.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding-top: 2.5rem;
+	padding-left: 2.5rem;
+}
+.action-description__title {
+	font-size: 3rem;
+	line-height: 4rem;
+	padding-left: 4rem;
+	font-weight: 700;
+	font-family: GothamPro-Bold;
+    color: #000;
+}
+.action-description__social-block{
+	width:40%;
+	padding-left:8px; 
+	padding-top:10px;
+}
+.action-description__hashtag{
+	background-color: #fff;
+	display: inline-block;
+	font-size: 3rem;
+	margin-left: 3.8rem;
+	font-weight: 400;
+	padding: 0px 0.4rem;
+	color: #f73934;
+	line-height: 4rem;
+}
+.action-description__button{
+	display: block;
+	border: 2px solid white;
+	color:#fff;
+	background-color: rgba(143,12,0,.1);
+	text-transform: uppercase;
+	margin-left: 3.8rem;
+	margin-top: 2.5rem;
+    margin-bottom: 4rem;
+    font-size: 1.8rem;
+    text-align: center;
+	padding: 15px;
+	width: 16rem;
+	transition: all 500ms;
+}
+.action-description__button:hover {
+	background-color: rgba(50,12,0,.2);
+}
+.photo-profile{
+	width: 50%;
+	flex-shrink: 0;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 0;
+	padding: 10px;
+	cursor: pointer;
+	background-color: #fff;
+	letter-spacing: 5px;
+}
+.photo-profile__item {
+	width: 33.3%;
+	padding: 3px;
+}
