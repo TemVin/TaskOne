@@ -1,6 +1,6 @@
 /*Позволяет загрузить шрифты на комп юзера*/
 @font-face {
-font-family: 'Gotham';
+font-family: 'GothamPro';
 src: url('../fonts/GothamPro.eot');
 src: url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
 url('../fonts/GothamPro.woff') format('woff'),
@@ -9,7 +9,7 @@ url('../fonts/GothamPro.svg') format('svg');
 }
 
 @font-face {
-font-family: 'Gotham';
+font-family: 'GothamPro-Medium';
 src: url('../fonts/GothamPro-Medium.eot');
 src: url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
 url('../fonts/GothamPro-Medium.woff') format('woff'),
@@ -18,7 +18,7 @@ url('../fonts/GothamPro-Medium.svg') format('svg');
 }
 
 @font-face {
-font-family: 'Gotham';
+font-family: 'GothamPro-Bold';
 src: url('../fonts/GothamPro-Bold.eot');
 src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
 url('../fonts/GothamPro-Bold.woff') format('woff'),
@@ -27,7 +27,7 @@ url('../fonts/GothamPro-Bold.svg') format('svg');
 }
 
 @font-face {
-font-family: 'Gotham';
+font-family: 'GothamPro-Black';
 src: url('../fonts/GothamPro-Black.eot');
 src: url('../fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
 url('../fonts/GothamPro-Black.woff') format('woff'),
@@ -35,14 +35,146 @@ url('../fonts/GothamPro-Black.ttf') format('truetype'),
 url('../fonts/GothamPro-Black.svg') format('svg');
 }
 
-/*Общие*/
+@font-face {
+  font-family: 'GothamPro-Light';
+  src: url('../fonts/GothamPro-Light.eot');
+  src: url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamPro-Light.woff') format('woff'),
+  url('../fonts/GothamPro-Light.ttf') format('truetype'),
+  url('../fonts/GothamPro-Light.svg') format('svg');
+}
 
+/*Общие*/
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+html {
+	font-size: 1vw;
+}
+.main-body {
+	font-family: "GothamPro", "Tahoma", sans-serif;
+	font-weight: 400;
+	width: 100%;
+	overflow-x: hidden;
+	background-color: #fff;
+	
+}
+/*Контейнеры сайта*/
+.site-container {
+	max-width: 1920px;
+	min-width: 320px;
+	position: relative;
+	width: 100%;
+	box-shadow: 0 0 40px 0 rgba(0,0,0, 0.5);
+	display: flex;
+	margin: 0 auto;
+}
+
+.main-content {
+	width: 100%;
+	background-color: #ffda2d;
+	margin-left: 150px;
+}
+
+.main-nav {
+	position: fixed;
+	width: 150px;
+	background-color: #f6f6f6;
+	height: 100%;
+	flex-shrink: 0;
+	left: 0;
+	top: 0;
+}
 
 /* Cайдбар */
 .main-logo {
 	display: block;
 	margin: 0 auto;
 	text-align: center;
-	padding-top: 20px;
 	padding-bottom: 40px;
+	padding-top: 27px;
 }
+
+.main-logo__hashtag {
+	font-family: GothamPro-Medium;
+	color: #f73934;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 40px;
+}
+
+ul {
+	list-style: none;
+}
+
+.main-nav__item {
+	display: block;
+	padding: 75px 0 20px;
+	text-align: center;
+	position: relative;
+}
+
+.top-section{
+	background-image: url(../img/top-section.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: right bottom;
+	padding-top: 4rem;
+	padding-left: 5rem;
+	height: 41rem;
+}
+
+.top-section-header {
+	display: flex;
+	height: 16rem;
+	width: 45rem;
+	justify-content: flex-start;
+}
+
+.top-section-caption {
+	/*font-size: 70px;*/
+	color: #f73934;
+	width: 20rem;
+	text-transform: uppercase;
+	/*position: relative;*/
+}
+
+.top-section-caption__first {
+	font-family: GothamPro-Medium;
+	font-weight: 500;
+	font-size: 6rem;
+	letter-spacing:0.5rem;
+	line-height: 6rem;
+}
+.top-section-caption__middle {
+	font-size: 3.7rem;
+	font-weight: 300;
+	line-height: 3.8rem;
+}
+.top-section-caption__last {
+	font-size: 3.7rem;
+	font-weight: 300;
+	text-transform: none;
+	line-height: 4rem;
+}
+
+.top-section-caption__middle,
+.top-section-caption__last
+{
+	font-family: GothamPro-Light;
+}
+
+.top-section-caption__last span {
+	font-family: GothamPro-Black;
+	font-size: 5.3rem;
+	font-weight: 900;
+	letter-spacing:0.4rem;
+}
+
