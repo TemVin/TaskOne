@@ -91,6 +91,7 @@ html {
 	flex-shrink: 0;
 	left: 0;
 	top: 0;
+	z-index: 99;
 }
 
 /* Cайдбар */
@@ -268,7 +269,7 @@ ul {
 	content: "";
 	top: 50%;
 	margin-top: -8rem;
-	right: -6rem;
+	right: -5rem;
 	border: 6rem solid transparent;
 	border-left: 6rem solid #f01300;
 	border-right: none;
@@ -341,4 +342,140 @@ ul {
 	-webkit-background-size: cover;
 	background-size: cover;
 	animation: enlargement-size 10s 2s linear infinite alternate;
+}
+
+/*Раздел, где море и карта*/
+.four-section {
+	display: flex;
+}
+.lays-people-sea {
+	width: 50%;
+	flex-shrink: 0;
+	height: 48rem;
+	overflow: hidden;
+}
+.lays-people-sea__photo{
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/lays-sea.jpg);
+	-webkit-background-size: cover;
+	background-position: bottom center;
+	background-size: cover;
+	animation: enlargement-size 10s 2s linear infinite alternate;
+}
+.lays-map {
+	width: 50%;
+	flex-shrink: 0;
+	background-image: url(../img/lays-map-texture.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding:3rem;
+	position: relative;
+}
+
+/*.lays-map::before {
+	position: absolute;
+	content: "";
+	background-image: url(../img/lays-map-triangle.png);
+	border: 9rem solid transparent; 
+	left: -2.7rem;
+	top: 185px;
+	transform: rotate(135deg);
+}*/
+.lays-map::before {
+	content: "";
+	height: 10rem;
+	width: 5rem;
+	background-image: url(../img/lays-map-triangle.png);
+	background-size: cover;
+	position: absolute;
+	left: -5rem;
+	top: 50%;
+	margin-top: -5rem;
+}
+
+.lays-map__title {
+	color: #301f20;
+	font-size: 5.2rem;
+	font-family: GothamPro-Bold;
+	line-height: 7rem;
+	text-align: center;
+	transition: all 500ms;  
+}
+.lays-map__button {
+	display: flex;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 2.2rem;
+	line-height: 6rem;
+	letter-spacing: 5px;
+	font-weight: 500;
+	cursor: pointer;
+    border: 2px solid white;
+    width: 20rem;
+    margin: auto;
+    margin-top: 2.5rem;
+    text-align: center;
+    transition: all 500ms;  
+}
+.lays-map__button:hover {
+	background-color: rgba(143,12,0,.1);
+}
+.lays-people-sea__mob {
+	display: none;
+}
+
+/*Подвал*/
+.page-footer{
+	display: flex;
+	height: 80px;
+	align-items: center;
+	background-color: #3c3c3c; 
+}
+
+.page-footer__logo {
+	width: 60px;
+	margin:15px 10px 10px 30px;
+	flex-shrink: 0;
+}
+.page-footer__copyright{
+	color: #b4b4b4;
+	font-size: 12px;
+  	line-height: 20px;
+}
+
+.page-footer-links{
+	display: flex;
+	margin-left: auto;
+	height: 100%;
+}
+.page-footer-links__item{
+	width: 80px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: .9;
+}
+.fb{
+	background-color: #3569a2;
+}
+
+.vk{
+	background-color: #3379ac;
+}
+
+.int{
+	background-color: #eec013;
+}
+
+.yt{
+	background-color: #c7080f;
+}
+
+.page-footer-links__item:hover {
+	opacity: 1.0;
+	cursor: pointer;
 }
