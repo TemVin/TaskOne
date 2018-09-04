@@ -66,6 +66,38 @@ html {
 	background-color: #fff;
 	
 }
+
+/*анимация*/
+@keyframes animation-right {
+	0% {
+		transform: translateX(35%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+.slide-motion-effect-right {
+	animation: animation-right 800ms ease-out forwards;
+}
+
+@keyframes animation-left {
+	0% {
+		transform: translateX(-35%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
+.slide-motion-effect-left {
+	animation: animation-left 800ms ease-out forwards;
+}
+
+
 /*Контейнеры сайта*/
 .site-container {
 	max-width: 1920px;
